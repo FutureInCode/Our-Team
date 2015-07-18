@@ -1,111 +1,138 @@
-body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td { margin:0; padding:0; }
-body { background:#fff; color:#555; font-size:14px; font-family: Verdana, Arial, Helvetica, sans-serif; }
-td,th,caption { font-size:14px; }
-h1, h2, h3, h4, h5, h6 { font-weight:normal; font-size:100%; }
-address, caption, cite, code, dfn, em, strong, th, var { font-style:normal; font-weight:normal;}
-a { text-decoration:none; }
-a:hover { text-decoration:underline; }
-img { border:none; }
-ol,ul,li { list-style:none; }
-input, textarea, select, button { font:14px Verdana,Helvetica,Arial,sans-serif; }
-table { border-collapse:collapse; }
-html {overflow-y: scroll;} 
 
-body{
-	width: 100%;
-	background-image: url('../images/bg.jpg');
-	background-repeat: no-repeat;
-	background-size: 120% 120%;
-	background-clip: border-box;
-	background-attachment: fixed;
+.content{
+	text-align:center;
+	margin-top:70px;
+	width:90%;
+	margin-left:auto;
+	margin-right:auto;
 }
-
-.team{
-	width: 100%;
+.personalInfo{
+	width:15%;
+	margin-right:1%;
+	float:left;
+	border-radius:1em;
+	background-color:rgba(174,170,170,0.8);
 }
-
-
-.member{
-	width: 100%;
-/*	background-color: #333;*/
-	overflow: hidden;
+#postList{
+	width:84%;
+	margin-left:16%;
+	border-radius:1em;
+	background-color:rgba(174,170,170,0.8);
 }
-
-header{
-	text-align: center;
-	font-size: 35px;
-	margin-bottom: 60px;
-	margin-top: 60px;
-	color: #fff;
+#scrollInfo{
+	width:84%;
+	margin-left:16%;
+	margin-top:10px;
+	border-radius:1em;
+	background-color:rgba(174,170,170,0.8);
 }
-
-.member .member-list{
-	overflow: hidden;
+#scrollContext{
+	height:140px;
 }
-
-.person{
-	margin-bottom: 60px;
-	width: 33%;
-	float: left;
+caption{
+	height:40px;
+	font-size:17px;
+	font-weight:bold;
+	padding-top:8px;
 }
-
-.person .wrap{
-	margin: auto;
-	width: 70%;
-	height: 100px;
-	padding: 20px 10px;
-	font-size: 15px;
-	font-family: 'MicroSoft YaHei';
-	color: #fff;
-	overflow: hidden;
+table{
+	font-size:17px;
+	width:97%;
+	margin-left:auto;
+	margin-right:auto;
 }
-
-.person .wrap:hover{
-	background-color: #666;
+tr,td{
+	text-align:left;
+	padding-left:5%;
+	color:#035;
+	width:100%;
+	height:35px;
+	cursor:pointer;
 }
-
-.person .wrap div{
-	float: left;
+td{
+	width:50%;
 }
-
-.person .wrap .img-wrap{
-	width: 30%;
-	margin-right: 10px;
+/*设置偶数行背景透明度更深*/
+tr:nth-child(odd){
+	background-color:rgba(174,170,170,0.5);
 }
-
-.person .wrap .info{
-	width: 66%;
+.contentButt{
+	font-size:20px;
+	font-family:微软雅黑,宋体, 'New York';
+	width:90%;
+	background-color:#035;
+	color:#fb3;
+	border: 2px solid #fb3;
+	border-radius:1em;
+	border-color:#fb3;
+	margin-top:10%;
+	margin-bottom:10%;
+	padding-top:5%;
+	padding-bottom:5%;
+	cursor:pointer;
 }
-
-.img-wrap img{
-	border-radius: 30px;
-	width: 80px;
-	height: 80px;
+.contentButt:hover{
+	background-color:#fb3;
+	color:#035;
 }
-
-.person .wrap a{
-	text-decoration: underline;
-	color: #fff;
+tr:hover{
+	background-color:rgba(174,170,170,0.9);
 }
-
-.person .info a:hover{
-	color:#E50053;
+.dateSpan{
+	margin-left:20px;
+	color:#336;
+	font-size:15px;
 }
-
-.person p{
-	margin-bottom: 10px;
+ul{
+	width:50%;
 }
-
-.person .name{
-	font-size: 25px;
+#newsRight{
+	float:right;
 }
-
-
-footer{
-	margin-bottom: 20px;
+.unshownClass{
+	display:none;
 }
-
-footer p {
-	color: #fff;
-	text-align: center;
+.displayClass{
+	display:inline;
+}
+.logInPanelOff{
+	display:none;
+}
+.logInPanelOn{
+	background-color:rgba(174,170,170,0.8);
+	border-radius:1em;
+	width:60%;
+	margin-top:150px;
+	margin-left:auto;
+	margin-right:auto;
+	padding:10px;
+	color:#035;
+	font-size:20px;
+}
+.logInButton{
+	font-size:15px;
+	font-family:微软雅黑,宋体, 'New York';
+	background-color:#035;
+	color:#fb3;
+	border: 2px solid #fb3;
+	border-radius:1em;
+	border-color:#fb3;
+	margin:10px;
+	padding-top:3px;
+	padding-bottom:3px;
+	padding-left:10px;
+	padding-right:10px;
+	cursor:pointer;
+}
+.logInButton:hover{
+	background-color:#fb3;
+	color:#035;
+}
+#adminLabel2{
+	margin-left:38px;
+}
+.errorInfo{
+	color:red;
+	font-size:12px;
+	margin-left:10px;
 }
